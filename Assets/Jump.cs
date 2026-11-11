@@ -36,12 +36,12 @@ public class Jump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("space")) 
         {
-            PlayerMoved();
-            JumpText.text = JumpCount.ToString();
+           PlayerMoved();
+          JumpText.text = JumpCount.ToString();
 
-        }
+       }
     }
 
     public void PlayerMoved()

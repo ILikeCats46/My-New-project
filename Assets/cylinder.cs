@@ -1,7 +1,13 @@
 using UnityEngine;
 
 public class cylinder : MonoBehaviour
+   
+
+
 {
+
+    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,5 +24,15 @@ public class cylinder : MonoBehaviour
     {
 
         Debug.Log("Cylinder.");
+    }
+
+    private void OnTriggerEnter(Collider other) //event
+    {
+       
+
+           
+        transform.localScale -= new Vector3(1f, 1f, 1f);
+
+
     }
 }
